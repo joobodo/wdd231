@@ -1,0 +1,123 @@
+/* 
+
+Color Scheme: 
+
+- Primary Dark (Header/Footer Background): #1E293B (Deep Slate Blue)
+- Accent (Interactive Hover/Active Links): #0EA5E9 (Vivid Sky Blue)
+- Neutral Light (Main Content Body Background): #F8FAFC (Ghost White)
+
+*/
+
+
+/* =============================== Site Wide =============================== */
+body {
+  background-color: #F8FAFC;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  column-gap: 8px;
+  align-items: end;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px #ddd;
+  grid-template-columns: 24px auto 44px;
+  font-family: "Overlock SC", sans-serif;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 4px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: #1E293B;
+}
+
+/* =============================== Hamburger =============================== */
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #1E293B;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00d7";
+}
+
+/* =============================== Navigation =============================== */
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  color: #1E293B;
+  padding: 0.78rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+  background-color: #0EA5E9;
+}
+
+.navigation li.current {
+  background-color: #eee;
+}
+
+h1 {
+  margin: 1rem 10px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #ccc solid 1px;
+  border-radius: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}

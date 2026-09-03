@@ -1,0 +1,21 @@
+/* 
+
+Color Scheme: 
+
+- Primary Dark (Header/Footer Background): #1E293B (Deep Slate Blue)
+- Accent (Interactive Hover/Active Links): #0EA5E9 (Vivid Sky Blue)
+- Neutral Light (Main Content Body Background): #F8FAFC (Ghost White)
+
+*/
+
+body {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
