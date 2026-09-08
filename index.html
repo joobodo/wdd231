@@ -3,11 +3,77 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 - Joshua</title>
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Web Development Fundamentals - A seven week course for BYU-I students. This is Joshua's home page.">
+    <title>My Sample Site</title>
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+ 
+    <!-- CSS Links -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
   </head>
 
   <body>
-    <h1>WDD231 - Joshua</h1>
+    <header>
+      <img src="images/logo.svg" alt="Site Logo" width="150" height="150">
+      <span>My Simple Site</span>
+      <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="current"><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Home</h1>
+
+      <div class="parent">
+        <section class="about-me">
+          <h3>About Me</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis ducimus suscipit exercitationem, ullam maxime dicta maiores aspernatur iure esse ad? Saepe nobis explicabo non distinctio, nesciunt pariatur eos aliquam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur numquam doloremque itaque! Corporis voluptatibus hic fugiat facilis accusamus atque soluta mollitia impedit porro exercitationem, minus odio error consectetur deserunt?
+          </p>
+        </section>
+        <section class="student-photo">
+          <h3>Student Photo</h3>
+          <img src="images/me2.jpg" alt="Joshua's Photo" width="376" height="376">
+        </section>
+      </div>
+      <section class="web-courses">
+        <h3>Web Certificate Courses</h3>
+        <button>All</button>
+        <button>CSE</button>
+        <button>WDD</button>
+
+        <div class="course-content">
+          <p>#1</p>
+          <p>#2</p>
+          <p>#3</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="ico-med" class="social">
+        <a href="https://github.com/joobodo" target="_blank"><img src="images/github.svg" alt="GitHub Logo" width="16" height="16"></a>
+        <a href="https://linkedin.com/in/joshua-o-obodo" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="16" height="16"></a>
+        <a href="https://x.com" target="_blank"><img src="images/instagram.svg" alt="X (Formerly Twitter) Logo" width="16" height="16"></a>
+      </div>
+      <p>&#169; and current year</p>
+      <p>Last modified</p>
+    </footer>
+
+    <!-- JavaScript -->
+     <script src="scripts/navigation.js"></script>
   </body>
 </html>

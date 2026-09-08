@@ -1,0 +1,146 @@
+/*
+Color Scheme:
+
+- Void Black (#121212): Background
+- Crisp Paper (#F4F1EA): Body Text & Structure
+- Electric Cyan (#292929): Accent / Hover States
+*/
+
+body {
+  background-color: #F4F1EA;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  column-gap: 8px;
+  align-items: end;
+  border-bottom: solid 1px #ddd;
+  grid-template-columns: 38px auto 44px;
+  font-family: "Zen Dots", sans-serif;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header span {
+  font-size: 1.4rem;
+  color: #121212;
+  padding-bottom: 4px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #121212;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00d7";
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  background-color: #121212;
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  color: #F4F1EA;
+  padding: 0.78rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+  background-color: #292929;
+}
+
+.navigation li.current {
+  background-color: #3b3b3b;
+}
+
+h1 {
+  margin: 1rem 10px;
+}
+
+h3 {
+  padding: 8px 0;
+  color: #F4F1EA;
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #121212;
+}
+
+section {
+  display: block;
+  width: auto;
+  height: 280px;
+  background-color: #ddd;
+}
+
+section p {
+  margin: 10px;
+}
+
+.student-photo img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  border-radius: 11px;
+  border: solid 1px #ccc;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #ccc solid 1px;
+  border-radius: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
