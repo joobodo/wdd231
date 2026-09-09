@@ -8,7 +8,6 @@ Color Scheme:
 
 body {
   background-color: #F4F1EA;
-  box-sizing: border-box;
 }
 
 header {
@@ -27,17 +26,24 @@ header img {
 }
 
 header span {
+  min-width: 0;
   font-size: 1.4rem;
   color: #121212;
   padding-bottom: 4px;
 }
 
 .hamburger {
+  width: 44px;
+  height: 44px;
+  justify-self: end;
+
   background: none;
   border: none;
+
   color: #121212;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
+
   cursor: pointer;
 }
 
