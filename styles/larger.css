@@ -27,6 +27,20 @@
     border: none;
   }
 
+  .parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  button {
+    width: 390px;
+  }
+
+  section {
+    height: 300px;
+  }
+
   footer {
     max-width: 900px;
     margin: 0 auto;
