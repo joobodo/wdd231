@@ -48,8 +48,12 @@
   
 
   .course-content {
-    display: flex;
+    display: grid;
     gap: 10px;
+  }
+
+  .course-content.all-courses {
+    grid-template-columns: 1fr 1fr;
   }
 
   .course-content p {
@@ -75,6 +79,10 @@
   footer {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .social img:hover {
+    color: #ccc;
   }
 
   .date-section {

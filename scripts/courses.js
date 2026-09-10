@@ -104,8 +104,11 @@ function displayCourses(courseList) {
 
 function filterCourses(subject) {
   if (subject === "All") {
+    courseContent.classList.add("all-courses");
     displayCourses(courses);
   } else {
+    courseContent.classList.remove("all-courses");
+
     const filteredCourses = courses.filter(course => course.subject === subject);
     displayCourses(filteredCourses);
   }

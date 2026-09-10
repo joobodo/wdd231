@@ -109,6 +109,7 @@ section {
 }
 
 section p {
+  font-size: 1.2rem;
   margin: 10px;
 }
 
@@ -199,10 +200,6 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 22px;
-}
-
-.social img:hover {
-  color: #ddd;
 }
 
 .social img {
