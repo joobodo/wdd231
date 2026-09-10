@@ -37,6 +37,10 @@
     width: 32%;
   }
 
+  button:hover {
+    background-color: #ccc;
+  }
+
   button:active {
     background-color: #121212;
     color: #ccc;

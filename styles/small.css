@@ -140,10 +140,6 @@ button {
   background-color: #ccc;
 }
 
-button:hover {
-  background-color: #ccc;
-}
-
 .course-content {
   display: grid;
   align-items: center;
