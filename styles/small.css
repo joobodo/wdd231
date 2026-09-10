@@ -128,7 +128,7 @@ section p {
 }
 
 button {
-  width: 110px;
+  width: 30%;
   height: 40px;
   padding: 10px;
   margin: 5px auto;
@@ -167,10 +167,28 @@ button:active {
   font-weight: 600;
 }
 
+.course-content .completed {
+  background-color: #292929;
+  color: #F4F1EA;
+}
+
 footer {
-  background-color: #eee;
   text-align: center;
-  padding: 1rem 10px;
+  padding: 1rem 0 0;
+}
+
+.date-section {
+  background-color: #ddd;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.date-section p {
+  margin: 5px 0;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .social {

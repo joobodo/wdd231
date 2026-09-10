@@ -34,7 +34,7 @@
   }
 
   button {
-    width: 390px;
+    width: 32%;
   }
 
   .course-content {
@@ -47,7 +47,12 @@
   }
 
   footer {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
   }
+
+  .date-section {
+    padding: 15px;
+  }
+
 }

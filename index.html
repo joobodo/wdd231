@@ -56,7 +56,7 @@
         <button>WDD</button>
 
         <div class="course-content">
-          <p>WDD130</p>
+          <p class="completed">WDD130</p>
           <p>WDD131</p>
           <p>WDD231</p>
         </div>
@@ -70,11 +70,15 @@
         <a href="https://github.com/joobodo" target="_blank"><img src="images/github.svg" alt="GitHub Logo" width="16" height="16"></a>
         <a href="https://x.com" target="_blank"><img src="images/twitter-x.svg" alt="X (Formerly Twitter) Logo" width="16" height="16"></a>
       </div>
-      <p>&#169; and current year</p>
-      <p>Last modified</p>
+      <div class="date-section">
+        <p>&#169;<span id="currentYear"></span> • Joshua O. Obodo • Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+      </div>
     </footer>
 
     <!-- JavaScript -->
-     <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/courses.js"></script>
+    <script src="scripts/navigation.js"></script>
   </body>
 </html>
