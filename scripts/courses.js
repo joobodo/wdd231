@@ -9,7 +9,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
           'HTML',
           'CSS'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
       technology: [
           'C#'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -77,3 +77,44 @@ const courses = [
       completed: false
   }
 ]
+
+const courseContent = document.querySelector(".course-content");
+const buttons = document.querySelectorAll(".web-courses button");
+const totalCredits = document.querySelector("#total");
+
+function displayCourses(courseList) {
+  courseContent.innerHTML = "";
+
+  courseList.forEach(course => {
+    const courseElement = document.createElement("p");
+
+    courseElement.textContent = `${course.subject} ${course.number}`;
+
+    if (course.completed) {
+      courseElement.classList.add("completed");
+    }
+
+    courseContent.appendChild(courseElement);
+  });
+
+  const total = courseList.reduce((sum, course) => sum + course.credits, 0);
+
+  totalCredits.textContent = total;
+}
+
+function filterCourses(subject) {
+  if (subject === "All") {
+    displayCourses(courses);
+  } else {
+    const filteredCourses = courses.filter(course => course.subject === subject);
+    displayCourses(filteredCourses);
+  }
+}
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterCourses(button.textContent);
+  });
+});
+
+displayCourses(courses);

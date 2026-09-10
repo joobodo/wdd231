@@ -90,7 +90,7 @@ h1 {
   margin: 1rem 10px;
 }
 
-h3 {
+h2 {
   margin: 0;
   padding: 8px 0;
   color: #F4F1EA;
@@ -144,11 +144,6 @@ button:hover {
   background-color: #ccc;
 }
 
-button:active {
-  background-color: #121212;
-  color: #ccc;
-}
-
 .course-content {
   display: grid;
   align-items: center;
@@ -156,7 +151,7 @@ button:active {
 
 .course-content p {
   width: 95%;
-  height: 30px;
+  height: 35px;
   padding: 5px;
   margin: 5px auto;
   border-radius: 3px;
@@ -170,6 +165,10 @@ button:active {
 .course-content .completed {
   background-color: #292929;
   color: #F4F1EA;
+}
+
+.course-content .completed::after {
+  content: " ✅";
 }
 
 footer {

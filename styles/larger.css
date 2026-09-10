@@ -37,10 +37,32 @@
     width: 32%;
   }
 
+  button:active {
+    background-color: #121212;
+    color: #ccc;
+  }
+  
+
   .course-content {
     display: flex;
     gap: 10px;
   }
+
+  .course-content p {
+    flex: 1;
+    width: auto;
+    min-height: 30px;
+    height: auto;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    border: solid 1px #000;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
 
   section {
     height: 300px;
