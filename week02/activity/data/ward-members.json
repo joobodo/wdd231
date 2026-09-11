@@ -1,0 +1,23 @@
+{
+  "family_name": "Freddie",
+  "move_in_date": "2020-02-23",
+  "no_of_people": 3,
+  "visited_by_bisphoric": false,
+  "family_members": [
+    {
+      "name": "John Freddie",
+      "gender": "Male",
+      "birthdate": "1998-09-30"
+    },
+    {
+      "name": "Sarah Freddie",
+      "gender": "Female",
+      "birthdate": "2000-05-12"
+    },
+    {
+      "name": "Mike Freddie",
+      "gender": "Male",
+      "birthdate": "1996-12-04"
+    }
+  ]
+}
