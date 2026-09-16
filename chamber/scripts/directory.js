@@ -54,6 +54,7 @@ gridViewButton.addEventListener('click', () => setView('grid'));
 listViewButton.addEventListener('click', () => setView('list'));
 menuButton.addEventListener('click', () => {
   const isOpen = siteNav.classList.toggle('open');
+  menuButton.textContent = isOpen ? '×' : '☰';
   menuButton.setAttribute('aria-expanded', String(isOpen));
   menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
 });
