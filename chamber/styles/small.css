@@ -5,7 +5,7 @@
   --paper: #fffdf9;
   --line: #d9e3df;
   --teal: #087f8c;
-  --coral: #e76f51;
+  --coral: #b84f38;
   --gold: #efb366;
   --shadow: 0 18px 40px rgba(23, 59, 63, 0.08);
 }
@@ -45,8 +45,14 @@ body {
   max-width: 150px;
 }
 
-.brand strong, .footer-brand strong {
+.brand strong {
   color: var(--teal);
+  display: block;
+  font-weight: 700;
+}
+
+.footer-brand strong {
+  color: var(--gold);
   display: block;
   font-weight: 700;
 }
