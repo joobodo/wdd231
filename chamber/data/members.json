@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Maji Studio",
+    "address": "17a Abibio Street, Yaba, Lagos",
+    "phone": "+234 803 555 0142",
+    "website": "https://example.com/maji-studio",
+    "image": "maji-studio.svg",
+    "membership": 3,
+    "category": "Creative studio",
+    "description": "A brand and digital studio helping ambitious African businesses find their voice."
+  },
+  {
+    "name": "The Green Basket",
+    "address": "8 Fola Osibo Street, Lekki, Lagos",
+    "phone": "+234 809 555 0188",
+    "website": "https://example.com/green-basket",
+    "image": "green-basket.svg",
+    "membership": 2,
+    "category": "Food and farm",
+    "description": "Fresh produce, pantry staples, and thoughtful delivery from local growers."
+  },
+  {
+    "name": "Nuru Advisory",
+    "address": "4 Kofo Abayomi Street, Victoria Island, Lagos",
+    "phone": "+234 1 555 0124",
+    "website": "https://example.com/nuru-advisory",
+    "image": "nuru-advisory.svg",
+    "membership": 3,
+    "category": "Business services",
+    "description": "Practical financial and strategy advice for growing companies."
+  },
+  {
+    "name": "Kora House",
+    "address": "26 Norman Williams Street, Ikoyi, Lagos",
+    "phone": "+234 816 555 0131",
+    "website": "https://example.com/kora-house",
+    "image": "kora-house.svg",
+    "membership": 2,
+    "category": "Hospitality",
+    "description": "A calm, design-led stay and meeting space in the heart of Ikoyi."
+  },
+  {
+    "name": "Swiftline Logistics",
+    "address": "2 Apapa-Oshodi Expressway, Apapa, Lagos",
+    "phone": "+234 805 555 0197",
+    "website": "https://example.com/swiftline",
+    "image": "swiftline-logistics.svg",
+    "membership": 1,
+    "category": "Logistics",
+    "description": "Reliable last-mile delivery and small-business logistics across Lagos."
+  },
+  {
+    "name": "Omi Wellness",
+    "address": "31 Admiralty Way, Lekki Phase 1, Lagos",
+    "phone": "+234 814 555 0166",
+    "website": "https://example.com/omi-wellness",
+    "image": "omi-wellness.svg",
+    "membership": 1,
+    "category": "Health and wellness",
+    "description": "Movement, recovery, and community care for modern Lagos life."
+  },
+  {
+    "name": "Tide & Timber",
+    "address": "5 Hughes Avenue, Alimosho, Lagos",
+    "phone": "+234 807 555 0115",
+    "website": "https://example.com/tide-and-timber",
+    "image": "tide-timber.svg",
+    "membership": 2,
+    "category": "Home and craft",
+    "description": "Small-batch furniture and warm interiors made for everyday living."
+  }
+]

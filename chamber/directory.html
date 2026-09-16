@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Find trusted businesses and community partners in the Lagos Business Collective directory.">
+    <title>Directory | Lagos Business Collective</title>
+
+    <meta property="og:title" content="Directory | Lagos Business Collective">
+    <meta property="og:description" content="Explore the businesses powering Lagos and connect with local community partners.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/chamber/images/social-preview.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" type="module"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="directory.html" aria-label="Lagos Business Collective home">
+        <img src="images/favicon.svg" alt="" width="48" height="48">
+        <span><strong>Lagos</strong> Business Collective</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="directory.html" aria-current="page">Directory</a>
+        <a href="#about">About us</a>
+        <a href="#events">Events</a>
+        <a class="nav-cta" href="#join">Join the chamber</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">Connect locally</p>
+        <h1 id="page-title">Business directory<span>.</span></h1>
+        <p class="intro-copy">Meet the people and businesses building a more connected Lagos.</p>
+      </section>
+
+      <section class="directory-section" aria-labelledby="directory-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Our network</p>
+            <h2 id="directory-title">Member businesses</h2>
+          </div>
+          <div class="view-controls" aria-label="Choose directory view">
+            <button class="view-button active" id="grid-view" type="button" aria-label="Show businesses as a grid" aria-pressed="true">▦ <span>Grid</span></button>
+            <button class="view-button" id="list-view" type="button" aria-label="Show businesses as a list" aria-pressed="false">☰ <span>List</span></button>
+          </div>
+        </div>
+        <div class="member-grid" id="member-grid" aria-live="polite">
+          <p class="loading">Loading member businesses...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="images/favicon.svg" alt="" width="38" height="38">
+        <div><strong>Lagos Business Collective</strong><span>Growing Lagos, together.</span></div>
+      </div>
+      <div class="footer-contact">
+        <p>12 Marina Road, Lagos Island, Lagos</p>
+        <a href="mailto:hello@lagoscollective.example">hello@lagoscollective.example</a>
+        <a href="tel:+2342015550199">+234 201 555 0199</a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="current-year"></span> Lagos Business Collective</p>
+        <p>Joshua O. Obodo | WDD 231</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
