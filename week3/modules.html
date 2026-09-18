@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 Course Sections</title>
+  <link rel="stylesheet" href="styles/modules.css">
+  <script type="module" src="scripts/modules.mjs"></script>
+</head>
+<body>
+  <header>
+    <h1>Web Frontend Development I</h1>
+    <p>WDD231</p>
+  </header>
+  <main>
+    <section class="controls" aria-labelledby="controls-heading">
+      <h2 id="controls-heading">Manage enrollment</h2>
+      <label for="sectionNumber">Choose a section:</label>
+      <select id="sectionNumber" name="sectionNumber"></select>
+      <div class="actions">
+        <button id="enrollStudent" type="button">Enroll a Student</button>
+        <button id="dropStudent" type="button">Drop a Student</button>
+      </div>
+    </section>
+    <section aria-labelledby="courseTitle">
+      <h2 id="courseTitle"></h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Section</th>
+              <th scope="col">Enrolled</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody id="sections"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
