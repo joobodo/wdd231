@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current weather conditions in Trier, Germany.">
+    <title>Trier Weather | WDD231</title>
+    <link rel="stylesheet" href="styles/weather.css">
+    <script src="scripts/weather.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">WDD231 API Practice</p>
+      <h1>OpenWeatherMap.org API Test</h1>
+    </header>
+
+    <main>
+      <section class="weather-panel" aria-labelledby="location-title">
+        <p class="location-label">Current conditions</p>
+        <h2 id="location-title">Trier, Germany</h2>
+        <p>The current temperature in Trier, Germany is <span id="current-temp">Loading...</span></p>
+        <figure>
+          <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Clear sky weather icon" width="100" height="100">
+          <figcaption>Weather icon preview</figcaption>
+        </figure>
+        <p id="weather-status" class="status" role="status"></p>
+      </section>
+    </main>
+
+    <footer>
+      Joshua O. Obodo | OpenWeatherMap.org | CC BY-SA 4.0
+    </footer>
+  </body>
+</html>
