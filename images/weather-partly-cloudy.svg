@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Partly cloudy</title>
+  <circle cx="23" cy="24" r="12" fill="#d49a48"/>
+  <path d="M19 47h30a9 9 0 0 0 0-18 13 13 0 0 0-25-2 10 10 0 0 0-5 20Z" fill="#f1eee7" stroke="#a54f32" stroke-width="3"/>
+</svg>

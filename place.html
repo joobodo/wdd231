@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A field guide to Moab, Utah, a red-rock landscape shaped by wind, water, and wide-open skies.">
+    <title>Moab, Utah | A Place Worth Finding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="place.html">Field Notes <span>/ Utah</span></a>
+      <p class="edition">Issue 03 <span aria-hidden="true">|</span> The red rock country</p>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="place-title">
+        <picture>
+          <source media="(min-width: 700px)" srcset="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=85&fm=webp">
+          <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=900&q=85&fm=webp" alt="Sunrise over red sandstone cliffs and desert near Moab, Utah" width="900" height="1200">
+        </picture>
+        <div class="hero-copy">
+          <p class="kicker">A place of scale</p>
+          <h1 id="place-title">Moab, <em>Utah</em></h1>
+          <p class="hero-description">Where the desert keeps its secrets in layers of rust, shadow, and light.</p>
+        </div>
+        <p class="hero-coordinate">38.5733° N <span aria-hidden="true">/</span> 109.5498° W</p>
+      </section>
+
+      <div class="content-grid">
+        <section class="about" aria-labelledby="about-title">
+          <p class="section-number">01 <span>About the place</span></p>
+          <h2 id="about-title">A landscape that asks you to slow down.</h2>
+          <p>Moab sits between two remarkable parks, Arches and Canyonlands, where the Colorado River cuts through Entrada sandstone. The town is a basecamp for early starts, long trails, and the kind of sunsets that make a phone feel unnecessary.</p>
+          <p>Visit in spring or fall for cool mornings and warm afternoons. Bring more water than you think you need, look up often, and leave the silence as you found it.</p>
+        </section>
+
+        <aside class="facts" aria-labelledby="facts-title">
+          <p class="section-number">02 <span>At a glance</span></p>
+          <h2 id="facts-title">Moab essentials</h2>
+          <dl>
+            <div><dt>Region</dt><dd>South-Eastern Utah</dd></div>
+            <div><dt>Known for</dt><dd>Arches &amp; Canyonlands</dd></div>
+            <div><dt>Best season</dt><dd>March to May</dd></div>
+            <div><dt>Elevation</dt><dd>4,026 ft / 1,227 m</dd></div>
+          </dl>
+        </aside>
+
+        <section class="weather" aria-labelledby="weather-title">
+          <div>
+            <p class="section-number">03 <span>Today's conditions</span></p>
+            <h2 id="weather-title">Weather</h2>
+          </div>
+          <div class="weather-reading">
+            <img src="images/weather-partly-cloudy.svg" alt="Partly cloudy" width="64" height="64">
+            <p class="temperature"><span id="temperature">4</span>°C</p>
+            <p class="condition">Partly cloudy<br><span>Moab, Utah</span></p>
+          </div>
+          <dl class="weather-details">
+            <div><dt>Wind</dt><dd><span id="wind-speed">12</span> km/h</dd></div>
+            <div><dt>Wind chill</dt><dd id="wind-chill">Calculating...</dd></div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Joshua O. Obodo <span aria-hidden="true">/</span> Field Notes</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>
