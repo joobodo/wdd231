@@ -5,7 +5,9 @@
   --paper: #fffdf9;
   --line: #d9e3df;
   --teal: #087f8c;
+  --teal-dark: #056875;
   --coral: #b84f38;
+  --coral-dark: #9f3b2b;
   --gold: #efb366;
   --shadow: 0 18px 40px rgba(23, 59, 63, 0.08);
 }
@@ -203,7 +205,7 @@ h2 { font-size: 1.6rem; letter-spacing: -.04em; margin-top: 5px; }
 .member-card h3 { font-size: 1.35rem; letter-spacing: -.03em; margin: 12px 0 7px; }
 .member-card p { color: var(--muted); font-size: .86rem; margin-bottom: 16px; }
 .member-card address { color: var(--ink); font-size: .78rem; font-style: normal; margin-top: auto; padding-top: 12px; }
-.member-link { border-top: 1px solid var(--line); color: var(--teal); display: flex; font-size: .8rem; font-weight: 700; justify-content: space-between; margin-top: 14px; padding-top: 13px; text-decoration: none; }
+.member-link { border-top: 1px solid var(--line); color: var(--teal-dark); display: flex; font-size: .8rem; font-weight: 700; justify-content: space-between; margin-top: 14px; padding-top: 13px; text-decoration: none; }
 
 .member-grid.list-view { display: flex; flex-direction: column; }
 .member-grid.list-view .member-card { flex-direction: row; }
@@ -212,6 +214,7 @@ h2 { font-size: 1.6rem; letter-spacing: -.04em; margin-top: 5px; }
 .member-grid.list-view .member-card p { display: none; }
 
 .loading { color: var(--muted); grid-column: 1 / -1; padding: 30px 0; }
+.weather-panel .loading { color: #c9ddda; }
 .loading.error { color: var(--coral); }
 
 .home-hero { display: grid; min-height: 430px; position: relative; }
@@ -223,7 +226,7 @@ h2 { font-size: 1.6rem; letter-spacing: -.04em; margin-top: 5px; }
 .hero-content p:not(.eyebrow) { color: #e2efeb; max-width: 430px; }
 .hero-cta { background: var(--coral); color: white; display: inline-flex; font-weight: 700; gap: 22px; margin-top: 24px; padding: 13px 16px; text-decoration: none; }
 .home-section { padding-top: 56px; }
-.text-link { color: var(--teal); font-size: .8rem; font-weight: 700; text-decoration: none; }
+.text-link { color: var(--teal-dark); font-size: .8rem; font-weight: 700; text-decoration: none; }
 .event-list { display: grid; gap: 12px; }
 .event-card { align-items: center; background: var(--paper); border: 1px solid var(--line); display: flex; gap: 18px; padding: 16px; }
 .event-card time { color: var(--coral); font-size: .7rem; font-weight: 700; text-align: center; }
@@ -245,6 +248,7 @@ h2 { font-size: 1.6rem; letter-spacing: -.04em; margin-top: 5px; }
 .status { color: #f7c493; font-size: .75rem; margin-top: 12px; }
 .spotlight-grid { grid-template-columns: 1fr; }
 .join-banner { align-items: center; background: #e4eee9; display: flex; flex-direction: column; gap: 18px; justify-content: space-between; margin-top: 64px; padding: 30px 22px; }
+.join-banner .eyebrow { color: var(--coral-dark); }
 .join-banner h2 { max-width: 500px; }
 .join-banner .hero-cta { margin-top: 0; }
 
