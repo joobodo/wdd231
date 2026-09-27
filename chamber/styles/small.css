@@ -252,6 +252,236 @@ h2 { font-size: 1.6rem; letter-spacing: -.04em; margin-top: 5px; }
 .join-banner h2 { max-width: 500px; }
 .join-banner .hero-cta { margin-top: 0; }
 
+.join-page {
+  display: grid;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.join-form-panel,
+.membership-card,
+.confirmation-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.panel-heading {
+  margin-bottom: 18px;
+}
+
+.join-form-panel {
+  padding: 24px 18px 18px;
+}
+
+.membership-form {
+  display: grid;
+  gap: 18px;
+}
+
+.membership-form label {
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 46px;
+  padding: 10px 12px;
+}
+
+.membership-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus {
+  border-color: var(--teal);
+  outline: 2px solid rgba(8, 127, 140, 0.18);
+  outline-offset: 2px;
+}
+
+.submit-button {
+  background: var(--coral);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-height: 48px;
+  padding: 12px 18px;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 16px;
+}
+
+.membership-card {
+  animation: cardReveal 0.7s ease both;
+  display: grid;
+  gap: 8px;
+  padding: 18px 16px;
+}
+
+.membership-card:nth-child(2) { animation-delay: 0.1s; }
+.membership-card:nth-child(3) { animation-delay: 0.2s; }
+.membership-card:nth-child(4) { animation-delay: 0.3s; }
+
+.level-label {
+  color: var(--coral);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.membership-card h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.level-price {
+  color: var(--muted);
+  font-size: .9rem;
+  margin: 0;
+}
+
+.membership-link {
+  border-top: 1px solid var(--line);
+  color: var(--teal-dark);
+  display: inline-flex;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-top: 6px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.level-np { background: linear-gradient(135deg, rgba(8,127,140,.08), var(--paper)); }
+.level-bronze { background: linear-gradient(135deg, rgba(184,79,56,.08), var(--paper)); }
+.level-silver { background: linear-gradient(135deg, rgba(239,179,102,.18), var(--paper)); }
+.level-gold { background: linear-gradient(135deg, rgba(23,59,63,.08), var(--paper)); }
+
+.membership-modal {
+  background: rgba(23, 59, 63, 0.7);
+  display: none;
+  inset: 0;
+  padding: 24px 18px;
+  position: fixed;
+  z-index: 30;
+}
+
+.membership-modal.open {
+  display: grid;
+  place-items: center;
+}
+
+.modal-panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  max-width: 480px;
+  padding: 22px 20px 18px;
+  position: relative;
+  width: min(100%, 460px);
+}
+
+.modal-close {
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+.modal-panel ul {
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.thankyou-section {
+  padding-top: 16px;
+}
+
+.thankyou-panel {
+  max-width: 760px;
+}
+
+.thankyou-message {
+  color: var(--muted);
+  font-size: 1.02rem;
+  margin-bottom: 22px;
+}
+
+.confirmation-card {
+  padding: 22px 20px;
+}
+
+.confirmation-card h2 {
+  margin-bottom: 18px;
+}
+
+.confirmation-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.confirmation-list div {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 4px;
+  padding-bottom: 12px;
+}
+
+.confirmation-list dt {
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.confirmation-list dd {
+  color: var(--ink);
+  font-size: 1rem;
+  margin: 0;
+}
+
+@keyframes cardReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .site-footer {
   background: var(--ink);
   color: white;

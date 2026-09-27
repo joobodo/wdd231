@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Apply to join the Lagos Business Collective Chamber and connect with businesses, opportunities, and community partners in Lagos.">
+    <title>Join the Chamber | Lagos Business Collective</title>
+
+    <meta property="og:title" content="Join the Chamber | Lagos Business Collective">
+    <meta property="og:description" content="Apply for chamber membership and grow your business alongside a connected community in Lagos.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/chamber/images/social-preview.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" type="module"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Lagos Business Collective home">
+        <img src="images/favicon.svg" alt="" width="48" height="48">
+        <span><strong>Lagos</strong> Business Collective</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="index.html#events">Events</a>
+        <a class="nav-cta" href="join.html" aria-current="page">Join the chamber</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">Grow with us</p>
+        <h1 id="page-title">Join the chamber<span>.</span></h1>
+        <p class="intro-copy">Become a member and connect with the businesses shaping Lagos.</p>
+      </section>
+
+      <section class="join-page" aria-label="Membership application form and levels">
+        <div class="join-form-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Membership application</p>
+            <h2>Apply today</h2>
+          </div>
+
+          <form class="membership-form" method="get" action="thankyou.html">
+            <label for="firstName">
+              First name
+              <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Applicant first name">
+            </label>
+
+            <label for="lastName">
+              Last name
+              <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Applicant last name">
+            </label>
+
+            <label for="organizationTitle">
+              Organizational title
+              <input type="text" id="organizationTitle" name="organizationTitle" autocomplete="organization-title" title="Use letters, spaces, and hyphens only; minimum 7 characters" pattern="^(?=.{7,}$)[A-Za-z]+(?:[ -][A-Za-z]+)*$">
+            </label>
+
+            <label for="email">
+              Email address
+              <input type="email" id="email" name="email" required autocomplete="email" title="Email address" placeholder="name@example.com">
+            </label>
+
+            <label for="phone">
+              Mobile phone number
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Mobile phone number">
+            </label>
+
+            <label for="organizationName">
+              Business/organization name
+              <input type="text" id="organizationName" name="organizationName" required autocomplete="organization" title="Business or organization name">
+            </label>
+
+            <label for="membershipLevel">
+              Membership level
+              <select id="membershipLevel" name="membershipLevel" required title="Membership level">
+                <option value="">Choose a level</option>
+                <option value="np">NP Membership (np)</option>
+                <option value="bronze">Bronze Membership (bronze)</option>
+                <option value="silver">Silver Membership (silver)</option>
+                <option value="gold">Gold Membership (gold)</option>
+              </select>
+            </label>
+
+            <label for="businessDescription">
+              Business/organization description
+              <textarea id="businessDescription" name="businessDescription" rows="5" title="Business description"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button class="submit-button" type="submit">Submit application</button>
+          </form>
+        </div>
+
+        <aside class="membership-cards" aria-label="Membership level cards">
+          <article class="membership-card level-np">
+            <p class="level-label">NP</p>
+            <h3>Nonprofit</h3>
+            <p class="level-price">No fee</p>
+            <a href="#modal-np" class="membership-link" data-target="modal-np" aria-haspopup="dialog">Learn more</a>
+          </article>
+
+          <article class="membership-card level-bronze">
+            <p class="level-label">Bronze</p>
+            <h3>Business</h3>
+            <p class="level-price">$100 / year</p>
+            <a href="#modal-bronze" class="membership-link" data-target="modal-bronze" aria-haspopup="dialog">Learn more</a>
+          </article>
+
+          <article class="membership-card level-silver">
+            <p class="level-label">Silver</p>
+            <h3>Growth</h3>
+            <p class="level-price">$250 / year</p>
+            <a href="#modal-silver" class="membership-link" data-target="modal-silver" aria-haspopup="dialog">Learn more</a>
+          </article>
+
+          <article class="membership-card level-gold">
+            <p class="level-label">Gold</p>
+            <h3>Leadership</h3>
+            <p class="level-price">$500 / year</p>
+            <a href="#modal-gold" class="membership-link" data-target="modal-gold" aria-haspopup="dialog">Learn more</a>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <div class="membership-modal" id="modal-np" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title-np">
+      <div class="modal-panel" tabindex="-1">
+        <button type="button" class="modal-close" aria-label="Close nonprofit membership details">×</button>
+        <p class="eyebrow">NP Membership</p>
+        <h3 id="modal-title-np">Nonprofit access</h3>
+        <ul>
+          <li>Community networking with mission-driven organizations.</li>
+          <li>Invitation to local advocacy and partner meetings.</li>
+          <li>Directory listing and event volunteer opportunities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="membership-modal" id="modal-bronze" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title-bronze">
+      <div class="modal-panel" tabindex="-1">
+        <button type="button" class="modal-close" aria-label="Close bronze membership details">×</button>
+        <p class="eyebrow">Bronze Membership</p>
+        <h3 id="modal-title-bronze">Starter visibility</h3>
+        <ul>
+          <li>Member directory listing and business profile.</li>
+          <li>Reduced pricing for chamber events and workshops.</li>
+          <li>Access to networking breakfasts and introductions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="membership-modal" id="modal-silver" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title-silver">
+      <div class="modal-panel" tabindex="-1">
+        <button type="button" class="modal-close" aria-label="Close silver membership details">×</button>
+        <p class="eyebrow">Silver Membership</p>
+        <h3 id="modal-title-silver">Growth benefits</h3>
+        <ul>
+          <li>Priority event registration and promotional exposure.</li>
+          <li>Highlight placement on the chamber home page.</li>
+          <li>Training sessions and strategic business matchmaking.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="membership-modal" id="modal-gold" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title-gold">
+      <div class="modal-panel" tabindex="-1">
+        <button type="button" class="modal-close" aria-label="Close gold membership details">×</button>
+        <p class="eyebrow">Gold Membership</p>
+        <h3 id="modal-title-gold">Leadership level</h3>
+        <ul>
+          <li>Premium spotlight placement and sponsored content opportunities.</li>
+          <li>VIP access to executive roundtables and city planning forums.</li>
+          <li>Tailored marketing support and business development referrals.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="images/favicon.svg" alt="" width="38" height="38">
+        <div><strong>Lagos Business Collective</strong><span>Growing Lagos, together.</span></div>
+      </div>
+      <div class="footer-contact">
+        <p>12 Marina Road, Lagos Island, Lagos</p>
+        <a href="mailto:hello@lagoscollective.example">hello@lagoscollective.example</a>
+        <a href="tel:+2342015550199">+234 201 555 0199</a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="current-year"></span> Lagos Business Collective</p>
+        <p>Joshua O. Obodo | WDD 231</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
