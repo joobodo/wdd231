@@ -230,35 +230,21 @@
         font-family: var(--body-font);
       }
 
-      .wireframe-note {
-        margin: 1.25rem 0;
-        padding: 1rem;
-        border: 1px solid var(--signal);
+      .wireframe-figure {
+        margin: 1.25rem 0 0;
       }
 
-      .wireframe-note strong {
-        color: var(--signal);
+      .wireframe-figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--ink);
       }
 
-      .wireframe-specs {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-top: 1.25rem;
-      }
-
-      .wireframe-specs article {
-        padding-top: 0.75rem;
-        border-top: 2px solid var(--ink);
-      }
-
-      .wireframe-specs h3 {
-        margin-top: 0;
-      }
-
-      .wireframe-specs ul {
-        margin-bottom: 0;
-        padding-left: 1.2rem;
+      .wireframe-figure figcaption {
+        margin-top: 0.65rem;
+        color: var(--ink);
+        font-size: 0.85rem;
       }
 
       footer {
@@ -272,9 +258,6 @@
           grid-template-columns: repeat(4, minmax(0, 1fr));
         }
 
-        .wireframe-specs {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
       }
     </style>
   </head>
@@ -358,31 +341,10 @@
           <span class="section-number">06</span>
           <h2 id="wireframe">Home Page Wireframe</h2>
         </div>
-        <p>The home page will introduce Boxed, explain its appeal at a glance, and lead visitors to the gameplay details or development journal.</p>
-        <div class="wireframe-note">
-          <strong>Hand-drawn sketches still needed.</strong>
-          <p>The supplied planning documents describe the intended layout but do not include the required black-and-white sketches. Add a scanned or photographed hand-drawn small-viewport and large-viewport wireframe here before submitting. These sketches must be made by hand for the course; this document does not generate them.</p>
-        </div>
-        <div class="wireframe-specs">
-          <article>
-            <h3>Small viewport</h3>
-            <ul>
-              <li>Header with logo and collapsed menu icon</li>
-              <li>Hero with title, tagline, and primary call to action</li>
-              <li>Three vertically stacked feature highlights</li>
-              <li>Recent dev journal preview, then footer links</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Large viewport</h3>
-            <ul>
-              <li>Header with logo and visible primary navigation</li>
-              <li>Hero with title, tagline, and primary call to action</li>
-              <li>Three feature highlights arranged in a row</li>
-              <li>Dev journal preview and footer links below</li>
-            </ul>
-          </article>
-        </div>
+        <figure class="wireframe-figure">
+          <img src="images/boxed-home-wireframe.svg" alt="Black-and-white wireframes of the Boxed home page on mobile and desktop. Both show the header, hero and follow button, feature highlights, latest development journal preview, and footer; features stack on mobile and sit in a row on desktop.">
+          <figcaption>Small/mobile and large/tablet-desktop home page layouts.</figcaption>
+        </figure>
       </section>
 
       <footer>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="wireframe-title wireframe-description">
+  <title id="wireframe-title">Boxed home page wireframes</title>
+  <desc id="wireframe-description">Black-and-white mobile and desktop layouts of the Boxed game website home page.</desc>
+  <style>
+    text { fill: #000; font-family: Arial, sans-serif; }
+    .frame { fill: #fff; stroke: #000; stroke-width: 3; }
+    .screen { fill: #fff; stroke: #000; stroke-width: 2; }
+    .rule { stroke: #000; stroke-width: 1.5; }
+    .heavy { stroke: #000; stroke-width: 3; }
+    .section-label { font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+    .small { font-size: 13px; }
+    .body { font-size: 15px; }
+    .heading { font-size: 19px; font-weight: 700; }
+    .hero-title { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+    .muted { font-size: 12px; }
+  </style>
+
+  <text x="55" y="48" class="section-label">BOXED / HOME PAGE STRUCTURE</text>
+  <line x1="55" y1="64" x2="1145" y2="64" class="heavy" />
+
+  <text x="72" y="100" class="section-label">SMALL / MOBILE</text>
+  <text x="420" y="100" class="section-label">LARGE / TABLET + DESKTOP</text>
+
+  <rect x="55" y="118" width="300" height="555" rx="12" class="frame" />
+  <rect x="74" y="139" width="262" height="513" class="screen" />
+
+  <rect x="74" y="139" width="262" height="48" class="screen" />
+  <rect x="87" y="149" width="29" height="28" class="screen" />
+  <text x="95" y="169" class="body" font-weight="700">B</text>
+  <text x="125" y="168" class="small" font-weight="700">BOXED</text>
+  <rect x="299" y="149" width="25" height="28" class="screen" />
+  <line x1="305" y1="157" x2="318" y2="157" class="rule" />
+  <line x1="305" y1="163" x2="318" y2="163" class="rule" />
+  <line x1="305" y1="169" x2="318" y2="169" class="rule" />
+
+  <rect x="84" y="198" width="242" height="126" class="screen" />
+  <text x="96" y="229" class="hero-title">BOXED</text>
+  <text x="96" y="251" class="small">A puzzle platformer about</text>
+  <text x="96" y="268" class="small">thinking inside the box.</text>
+  <rect x="96" y="280" width="145" height="31" class="screen" />
+  <text x="107" y="300" class="muted" font-weight="700">FOLLOW DEV LOG</text>
+
+  <text x="85" y="348" class="small" font-weight="700">FEATURE HIGHLIGHTS</text>
+  <rect x="84" y="358" width="242" height="40" class="screen" />
+  <text x="98" y="383" class="body">01  Core mechanics</text>
+  <rect x="84" y="405" width="242" height="40" class="screen" />
+  <text x="98" y="430" class="body">02  Pixel-art style</text>
+  <rect x="84" y="452" width="242" height="40" class="screen" />
+  <text x="98" y="477" class="body">03  PC + mobile</text>
+
+  <rect x="84" y="502" width="242" height="89" class="screen" />
+  <text x="97" y="524" class="muted" font-weight="700">DEV JOURNAL / LATEST UPDATE</text>
+  <text x="97" y="547" class="body" font-weight="700">Building the next level</text>
+  <text x="97" y="570" class="small">Read the development update  &gt;</text>
+
+  <rect x="74" y="601" width="262" height="51" class="screen" />
+  <text x="88" y="624" class="muted">CONTACT  ·  SOCIAL</text>
+  <text x="88" y="641" class="muted">© BOXED</text>
+
+  <rect x="395" y="118" width="750" height="555" rx="5" class="frame" />
+  <rect x="416" y="139" width="708" height="513" class="screen" />
+
+  <rect x="416" y="139" width="708" height="53" class="screen" />
+  <rect x="434" y="151" width="30" height="29" class="screen" />
+  <text x="443" y="172" class="body" font-weight="700">B</text>
+  <text x="476" y="171" class="body" font-weight="700">BOXED</text>
+  <text x="810" y="171" class="small">HOME</text>
+  <text x="864" y="171" class="small">GAMEPLAY</text>
+  <text x="951" y="171" class="small">DEV JOURNAL</text>
+  <rect x="1041" y="150" width="68" height="31" class="screen" />
+  <text x="1051" y="170" class="muted" font-weight="700">FOLLOW</text>
+
+  <rect x="437" y="207" width="666" height="145" class="screen" />
+  <text x="458" y="250" class="hero-title">BOXED</text>
+  <text x="458" y="276" class="body">A puzzle platformer about thinking inside the box.</text>
+  <rect x="458" y="295" width="150" height="37" class="screen" />
+  <text x="472" y="319" class="small" font-weight="700">FOLLOW DEV LOG</text>
+  <rect x="873" y="221" width="211" height="117" class="screen" />
+  <text x="920" y="275" class="small" font-weight="700">GAMEPLAY IMAGE</text>
+  <text x="935" y="296" class="muted">or game mark</text>
+
+  <text x="438" y="379" class="small" font-weight="700">FEATURE HIGHLIGHTS</text>
+  <rect x="437" y="389" width="211" height="76" class="screen" />
+  <text x="452" y="418" class="body" font-weight="700">CORE MECHANICS</text>
+  <text x="452" y="442" class="small">Puzzle-driven movement</text>
+  <rect x="664" y="389" width="211" height="76" class="screen" />
+  <text x="679" y="418" class="body" font-weight="700">PIXEL-ART STYLE</text>
+  <text x="679" y="442" class="small">Minimal, bold visuals</text>
+  <rect x="891" y="389" width="212" height="76" class="screen" />
+  <text x="906" y="418" class="body" font-weight="700">PC + MOBILE</text>
+  <text x="906" y="442" class="small">Made for both platforms</text>
+
+  <rect x="437" y="480" width="666" height="112" class="screen" />
+  <text x="458" y="505" class="muted" font-weight="700">DEV JOURNAL / LATEST UPDATE</text>
+  <text x="458" y="535" class="heading">Building the next level</text>
+  <text x="458" y="559" class="small">A short preview of the latest development milestone.</text>
+  <text x="458" y="580" class="small" font-weight="700">READ THE DEV JOURNAL  &gt;</text>
+
+  <rect x="416" y="602" width="708" height="50" class="screen" />
+  <text x="438" y="632" class="small">BOXED  ·  CONTACT  ·  SOCIAL LINKS</text>
+  <text x="1014" y="632" class="small">© BOXED</text>
+</svg>
