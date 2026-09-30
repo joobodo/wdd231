@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joshua O. Obodo">
-    <meta name="description" content="Find trusted businesses and community partners in the Lagos Business Collective directory.">
-    <title>Directory | Lagos Business Collective</title>
+    <meta name="description" content="Explore the landmarks, culture, and outdoor places that make Lagos a destination for visitors and businesses.">
+    <title>Discover Lagos | Lagos Business Collective</title>
 
-    <meta property="og:title" content="Directory | Lagos Business Collective">
-    <meta property="og:description" content="Explore the businesses powering Lagos and connect with local community partners.">
+    <meta property="og:title" content="Discover Lagos | Lagos Business Collective">
+    <meta property="og:description" content="Explore the landmarks, culture, and outdoor places that make Lagos a destination for visitors and businesses.">
     <meta property="og:image" content="https://joobodo.github.io/wdd231/chamber/images/social-preview.svg">
-    <meta property="og:url" content="https://joobodo.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" type="module"></script>
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/discover.js" type="module"></script>
   </head>
   <body>
     <header class="site-header">
@@ -32,34 +33,38 @@
       <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="directory.html" aria-current="page">Directory</a>
-        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="discover.html" aria-current="page">Discover</a>
         <a href="index.html#events">Events</a>
         <a class="nav-cta" href="join.html">Join the chamber</a>
       </nav>
     </header>
 
-    <main>
-      <section class="page-intro" aria-labelledby="page-title">
-        <p class="eyebrow">Connect locally</p>
-        <h1 id="page-title">Business directory<span>.</span></h1>
-        <p class="intro-copy">Meet the people and businesses building a more connected Lagos.</p>
+    <main class="discover-main">
+      <section class="page-intro discover-intro" aria-labelledby="page-title">
+        <p class="eyebrow">The city beyond the meeting room</p>
+        <h1 id="page-title">Discover Lagos<span>.</span></h1>
+        <p class="intro-copy">From a canopy walk above the forest to a waterfront skyline, explore the places and stories that shape the city.</p>
+        <div class="city-facts" aria-label="Lagos at a glance">
+          <div><strong>20</strong><span>Local government areas</span></div>
+          <div><strong>9,013,534</strong><span>Residents recorded in the 2006 census</span></div>
+          <p>Historical census baseline: <a href="https://www.nigerianstat.gov.ng/" target="_blank" rel="noopener">National Bureau of Statistics</a>.</p>
+        </div>
       </section>
 
-      <section class="directory-section" aria-labelledby="directory-title">
-        <div class="section-heading">
+      <section class="discover-section" aria-labelledby="places-title">
+        <div class="discover-heading">
           <div>
-            <p class="eyebrow">Our network</p>
-            <h2 id="directory-title">Member businesses</h2>
+            <p class="eyebrow">Eight ways to get to know the city</p>
+            <h2 id="places-title">Places of interest</h2>
           </div>
-          <div class="view-controls" role="group" aria-label="Choose directory view">
-            <button class="view-button active" id="grid-view" type="button" aria-label="Show businesses as a grid" aria-pressed="true">▦ <span>Grid</span></button>
-            <button class="view-button" id="list-view" type="button" aria-label="Show businesses as a list" aria-pressed="false">☰ <span>List</span></button>
-          </div>
+          <p class="discover-count">LAGOS STATE <span aria-hidden="true">/</span> NIGERIA</p>
         </div>
-        <div class="member-grid" id="member-grid" aria-live="polite">
-          <p class="loading">Loading member businesses...</p>
+        <p class="visit-message" id="visit-message" role="status" aria-live="polite"></p>
+        <div class="places-grid" id="places-grid" aria-live="polite">
+          <p class="loading">Loading places around Lagos...</p>
         </div>
+        <p class="photo-credit">Photography from <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels</a>. Images are locally resized WebP files; individual photo credits appear with each image.</p>
       </section>
     </main>
 
