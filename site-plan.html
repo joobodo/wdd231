@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="The website plan for Boxed, a minimalist pixel-art puzzle-platformer in development.">
+    <title>Boxed | Website Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1A1A1A;
+        --paper: #FFFFFF;
+        --slate: #8C8C8C;
+        --signal: #D7263D;
+        --line: #8C8C8C;
+        --heading-font: "Poppins", sans-serif;
+        --body-font: "Inter", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--body-font);
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--signal);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        color: var(--ink);
+      }
+
+      .masthead {
+        border-bottom: 2px solid var(--ink);
+        padding: 1.25rem max(1.25rem, calc((100vw - 980px) / 2));
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+      }
+
+      .mark {
+        width: 2.5rem;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        background: var(--signal);
+        color: var(--paper);
+        font-family: var(--heading-font);
+        font-weight: 700;
+      }
+
+      .masthead p {
+        margin: 0;
+        font-family: var(--heading-font);
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      main {
+        width: min(100% - 2.5rem, 980px);
+        margin: 0 auto;
+      }
+
+      .intro {
+        padding: clamp(2.5rem, 8vw, 5.5rem) 0 2.5rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow,
+      .section-number,
+      .label {
+        color: var(--signal);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--heading-font);
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0.35rem 0 0.5rem;
+        font-size: clamp(2.5rem, 7vw, 4.75rem);
+      }
+
+      .tagline {
+        max-width: 42rem;
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .plan-meta {
+        margin: 1.5rem 0 0;
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 2.25rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--signal);
+        font-size: 1.5rem;
+      }
+
+      .section-number {
+        color: var(--ink);
+        font-variant-numeric: tabular-nums;
+      }
+
+      h3 {
+        margin: 1.5rem 0 0.35rem;
+        font-size: 1.05rem;
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .domain {
+        display: inline-block;
+        margin-top: 0.65rem;
+        padding: 0.25rem 0.6rem;
+        border: 1px solid var(--slate);
+        font-size: 0.9rem;
+      }
+
+      .scenarios {
+        padding-left: 1.25rem;
+      }
+
+      .scenarios li {
+        padding: 0.25rem 0 0.25rem 0.25rem;
+      }
+
+      .palette {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+      }
+
+      .swatch {
+        min-height: 7.5rem;
+        padding: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--ink);
+      }
+
+      .swatch strong,
+      .swatch code {
+        color: inherit;
+        font-size: 0.9rem;
+      }
+
+      .swatch code {
+        font-family: var(--body-font);
+      }
+
+      .swatch-ink {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .swatch-paper {
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      .swatch-slate {
+        background: var(--slate);
+        color: var(--ink);
+      }
+
+      .swatch-signal {
+        background: var(--signal);
+        color: var(--paper);
+      }
+
+      .font-sample {
+        margin: 0.6rem 0 1rem;
+        padding: 0.9rem 1rem;
+        border-left: 3px solid var(--signal);
+        background: var(--paper);
+      }
+
+      .font-sample strong {
+        display: block;
+        color: var(--signal);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+      }
+
+      .font-sample.heading-sample {
+        font-family: var(--heading-font);
+        font-weight: 600;
+      }
+
+      .font-sample.body-sample {
+        font-family: var(--body-font);
+      }
+
+      .wireframe-note {
+        margin: 1.25rem 0;
+        padding: 1rem;
+        border: 1px solid var(--signal);
+      }
+
+      .wireframe-note strong {
+        color: var(--signal);
+      }
+
+      .wireframe-specs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.25rem;
+      }
+
+      .wireframe-specs article {
+        padding-top: 0.75rem;
+        border-top: 2px solid var(--ink);
+      }
+
+      .wireframe-specs h3 {
+        margin-top: 0;
+      }
+
+      .wireframe-specs ul {
+        margin-bottom: 0;
+        padding-left: 1.2rem;
+      }
+
+      footer {
+        padding: 1.5rem 0 2.5rem;
+        color: var(--ink);
+        font-size: 0.85rem;
+      }
+
+      @media (min-width: 620px) {
+        .palette {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .wireframe-specs {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="masthead">
+      <span class="mark" aria-hidden="true">B</span>
+      <p>BOXED <span aria-hidden="true">/</span> WDD 231 SITE PLAN</p>
+    </header>
+
+    <main>
+      <div class="intro">
+        <p class="eyebrow">Individual project · planning document</p>
+        <h1>Boxed</h1>
+        <p class="tagline">Think inside the box. A website plan for a minimalist pixel-art puzzle-platformer in development for PC and mobile.</p>
+        <p class="plan-meta">Prepared by Joshua O. Obodo · WDD 231</p>
+      </div>
+
+      <section aria-labelledby="site-name">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <h2 id="site-name">Site Name</h2>
+        </div>
+        <p><strong>Boxed</strong> is the title of the game and the site. The short, memorable name reflects its minimalist, geometric puzzle design: every level invites players to think inside, and sometimes outside, the box.</p>
+        <p class="domain">Optional domain: <strong>playboxed.com</strong></p>
+      </section>
+
+      <section aria-labelledby="site-purpose">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <h2 id="site-purpose">Site Purpose</h2>
+        </div>
+        <p>The site is an informational hub for Boxed, a minimalist pixel-art puzzle-platformer in development for PC and mobile. It introduces the game’s concept and visual style to prospective players, explains its core mechanics, and shares development progress on the way to release.</p>
+        <p>Planned pages: Home / Overview, Gameplay &amp; Features, and Dev Journal / Roadmap.</p>
+      </section>
+
+      <section aria-labelledby="scenarios">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <h2 id="scenarios">Audience Scenarios</h2>
+        </div>
+        <p>These questions represent platformer fans, puzzle lovers, and younger players exploring a new game:</p>
+        <ul class="scenarios">
+          <li>What kind of game is Boxed, and which platforms will it be available on?</li>
+          <li>What makes Boxed’s puzzle-platformer mechanics different from other games in the genre?</li>
+          <li>How can I follow the game’s development progress before it is released?</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="color-scheme">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <h2 id="color-scheme">Color Scheme</h2>
+        </div>
+        <p>The four-color palette comes directly from Boxed’s in-game art style. It will be applied consistently across this planning document and the future site.</p>
+        <div class="palette" aria-label="Boxed color palette and intended uses">
+          <div class="swatch swatch-ink"><strong>Ink Black</strong><code>#1A1A1A · body text, primary UI</code></div>
+          <div class="swatch swatch-paper"><strong>Paper White</strong><code>#FFFFFF · page background</code></div>
+          <div class="swatch swatch-slate"><strong>Slate Gray</strong><code>#8C8C8C · borders, secondary details</code></div>
+          <div class="swatch swatch-signal"><strong>Signal Red</strong><code>#D7263D · headings, links, buttons</code></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="typography">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <h2 id="typography">Typography</h2>
+        </div>
+        <p>Two typefaces provide a clear distinction between expressive game branding and comfortable reading.</p>
+        <div class="font-sample heading-sample">
+          <strong>Poppins · headings and titles</strong>
+          Boxed — Think Inside the Box
+        </div>
+        <div class="font-sample body-sample">
+          <strong>Inter · body text and interface labels</strong>
+          Every level is a new question. Find your way to the goal.
+        </div>
+      </section>
+
+      <section aria-labelledby="wireframe">
+        <div class="section-heading">
+          <span class="section-number">06</span>
+          <h2 id="wireframe">Home Page Wireframe</h2>
+        </div>
+        <p>The home page will introduce Boxed, explain its appeal at a glance, and lead visitors to the gameplay details or development journal.</p>
+        <div class="wireframe-note">
+          <strong>Hand-drawn sketches still needed.</strong>
+          <p>The supplied planning documents describe the intended layout but do not include the required black-and-white sketches. Add a scanned or photographed hand-drawn small-viewport and large-viewport wireframe here before submitting. These sketches must be made by hand for the course; this document does not generate them.</p>
+        </div>
+        <div class="wireframe-specs">
+          <article>
+            <h3>Small viewport</h3>
+            <ul>
+              <li>Header with logo and collapsed menu icon</li>
+              <li>Hero with title, tagline, and primary call to action</li>
+              <li>Three vertically stacked feature highlights</li>
+              <li>Recent dev journal preview, then footer links</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Large viewport</h3>
+            <ul>
+              <li>Header with logo and visible primary navigation</li>
+              <li>Hero with title, tagline, and primary call to action</li>
+              <li>Three feature highlights arranged in a row</li>
+              <li>Dev journal preview and footer links below</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>Boxed website plan · WDD 231 · Joshua O. Obodo</p>
+      </footer>
+    </main>
+  </body>
+</html>
