@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Explore 15 Boxed puzzle concepts, from first steps to layered switches. Filter by world, inspect design notes, and save puzzles on this device.">
+    <meta property="og:title" content="Gameplay & Puzzles | Boxed">
+    <meta property="og:description" content="Explore the mechanics and puzzle concepts behind Boxed, a minimalist puzzle-platformer in development.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/boxed/gameplay.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gameplay & Puzzles | Boxed">
+    <meta name="twitter:description" content="Explore the mechanics and puzzle concepts behind Boxed.">
+    <meta name="twitter:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <title>Gameplay & Puzzles | Boxed</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+    <script src="scripts/levels.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Boxed home"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="gameplay.html" aria-current="page">Gameplay</a>
+        <a href="journal.html">Dev journal</a>
+        <a class="nav-cta" href="journal.html#follow">Follow the build</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="page-intro">
+        <p class="eyebrow">Gameplay / design concepts</p>
+        <h1>Every room asks a new question.</h1>
+        <p class="lead">Pushable blocks, switches, and carefully arranged spaces are the building blocks of Boxed. Explore 15 early puzzle concepts and see how the ideas grow from one room to the next.</p>
+        <p class="muted">These entries are design concepts, not a list of finished or released levels.</p>
+      </header>
+
+      <section class="section-block" aria-labelledby="puzzle-library-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Puzzle library</p><h2 id="puzzle-library-title">Find a way through.</h2></div>
+        </div>
+        <div class="filter-panel">
+          <div class="field">
+            <label for="world-filter">Filter by world</label>
+            <select id="world-filter">
+              <option value="all">All worlds</option>
+              <option value="The Outline">The Outline</option>
+              <option value="The Switch">The Switch</option>
+              <option value="Beyond the Box">Beyond the Box</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="level-search">Search puzzles</label>
+            <input id="level-search" type="search" placeholder="Try “switch” or “blocks”" autocomplete="off">
+          </div>
+        </div>
+        <p class="status" id="level-status" role="status" aria-live="polite">Loading puzzle concepts…</p>
+        <div class="level-grid" id="level-grid" aria-busy="true"></div>
+      </section>
+    </main>
+
+    <dialog class="dialog" id="level-dialog" aria-labelledby="dialog-level-title" aria-describedby="dialog-level-note">
+      <p class="eyebrow" id="dialog-level-number"></p>
+      <h2 id="dialog-level-title"></h2>
+      <dl class="level-facts">
+        <div><dt>Mechanic</dt><dd id="dialog-level-mechanic"></dd></div>
+        <div><dt>Goal</dt><dd id="dialog-level-objective"></dd></div>
+      </dl>
+      <p id="dialog-level-note"></p>
+      <button class="dialog-close" type="button">Close</button>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Overview</a>
+          <a href="journal.html">Dev journal</a>
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtube.com/shorts/xgx_YhHZSyY?si=Gf-VzHeFY4wTo_Pz" target="_blank" rel="noopener noreferrer">Project video</a>
+        </nav>
+        <div class="footer-meta"><p>&copy; <span id="current-year"></span> Boxed · Joshua O. Obodo · WDD 231</p><p>Page updated: <span id="last-modified"></span></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

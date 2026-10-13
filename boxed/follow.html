@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Review the Boxed development update request you submitted in this browser session.">
+    <meta property="og:title" content="Request Details | Boxed">
+    <meta property="og:description" content="Review your locally stored Boxed development update request.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/boxed/follow.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Request Details | Boxed">
+    <meta name="twitter:description" content="Review your locally stored Boxed development update request.">
+    <meta name="twitter:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <title>Request Details | Boxed</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+    <script src="scripts/follow-result.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Boxed home"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="journal.html" aria-current="page">Dev journal</a>
+        <a class="nav-cta" href="journal.html#follow">Follow the build</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="result-panel" aria-labelledby="result-title">
+        <p class="eyebrow">Dev journal / request details</p>
+        <h1 id="result-title">Your update request.</h1>
+        <p id="result-message" role="status" aria-live="polite">Loading your request…</p>
+        <dl class="result-details" id="result-details"></dl>
+        <a class="button" href="index.html">Back to Boxed</a>
+        <a class="button button--outline" href="journal.html#follow">Return to the form</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Overview</a>
+          <a href="gameplay.html">Gameplay</a>
+          <a href="journal.html">Dev journal</a>
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtube.com/shorts/xgx_YhHZSyY?si=Gf-VzHeFY4wTo_Pz" target="_blank" rel="noopener noreferrer">Project video</a>
+        </nav>
+        <div class="footer-meta"><p>&copy; <span id="current-year"></span> Boxed · Joshua O. Obodo · WDD 231</p><p>Page updated: <span id="last-modified"></span></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

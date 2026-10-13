@@ -1,0 +1,137 @@
+[
+  {
+    "id": "01",
+    "name": "Reach The Exit",
+    "world": "The Outline",
+    "mechanic": "Movement",
+    "objective": "Learn to walk, jump, and reach the exit.",
+    "difficulty": "Intro",
+    "designNote": "A quiet first room introduces the controls with no timer and one obvious route."
+  },
+  {
+    "id": "02",
+    "name": "One Good Push",
+    "world": "The Outline",
+    "mechanic": "Pushable blocks",
+    "objective": "Move a single box beneath a ledge.",
+    "difficulty": "Intro",
+    "designNote": "The box is both a tool and a question: where should it go before you climb?"
+  },
+  {
+    "id": "03",
+    "name": "A Little Higher",
+    "world": "The Outline",
+    "mechanic": "Stacking",
+    "objective": "Stack two blocks to reach a raised doorway.",
+    "difficulty": "Easy",
+    "designNote": "A low ceiling makes the order of each push matter."
+  },
+  {
+    "id": "04",
+    "name": "Red Means Go",
+    "world": "The Outline",
+    "mechanic": "Pressure switch",
+    "objective": "Hold a floor switch down with a block.",
+    "difficulty": "Easy",
+    "designNote": "A red signal light makes the connection between switch and door easy to read."
+  },
+  {
+    "id": "05",
+    "name": "Room to Turn",
+    "world": "The Outline",
+    "mechanic": "Reset and retry",
+    "objective": "Recover from a misplaced block and find another route.",
+    "difficulty": "Easy",
+    "designNote": "Safe dead ends invite experimentation and make the reset option feel useful."
+  },
+  {
+    "id": "06",
+    "name": "Split Decision",
+    "world": "The Switch",
+    "mechanic": "Linked switches",
+    "objective": "Open two gates by leaving blocks on separate switches.",
+    "difficulty": "Medium",
+    "designNote": "The room is symmetrical, but the order of operations is not."
+  },
+  {
+    "id": "07",
+    "name": "The Long Way",
+    "world": "The Switch",
+    "mechanic": "Multi-room routing",
+    "objective": "Carry a block through a side corridor to the main room.",
+    "difficulty": "Medium",
+    "designNote": "A one-way drop asks players to plan where their tools will be needed next."
+  },
+  {
+    "id": "08",
+    "name": "Weight of It",
+    "world": "The Switch",
+    "mechanic": "Weighted platforms",
+    "objective": "Balance a lift with the player and a movable block.",
+    "difficulty": "Medium",
+    "designNote": "A simple two-state lift rewards noticing that the player is part of the puzzle."
+  },
+  {
+    "id": "09",
+    "name": "A Narrow Margin",
+    "world": "The Switch",
+    "mechanic": "Tight spaces",
+    "objective": "Slide a block through a narrow passage without trapping it.",
+    "difficulty": "Medium",
+    "designNote": "Clear silhouettes show which gaps are traversable before a move is committed."
+  },
+  {
+    "id": "10",
+    "name": "Echo Chamber",
+    "world": "The Switch",
+    "mechanic": "Remote triggers",
+    "objective": "Activate a distant gate from the opposite side of the room.",
+    "difficulty": "Medium",
+    "designNote": "A repeated visual signal connects a distant switch to its matching gate."
+  },
+  {
+    "id": "11",
+    "name": "No Spare Squares",
+    "world": "Beyond the Box",
+    "mechanic": "Limited space",
+    "objective": "Place three blocks in a room with no safe storage tiles.",
+    "difficulty": "Hard",
+    "designNote": "Every square has a purpose, so the solution comes from undoing assumptions."
+  },
+  {
+    "id": "12",
+    "name": "The False Exit",
+    "world": "Beyond the Box",
+    "mechanic": "Misleading routes",
+    "objective": "Find the switch hidden beyond an apparent dead end.",
+    "difficulty": "Hard",
+    "designNote": "A visible exit is a clue, not the whole answer; the room rewards looking back."
+  },
+  {
+    "id": "13",
+    "name": "Keep It Moving",
+    "world": "Beyond the Box",
+    "mechanic": "Moving platforms",
+    "objective": "Ride a platform while keeping a block in reach.",
+    "difficulty": "Hard",
+    "designNote": "Predictable platform timing keeps the challenge in planning rather than reflexes."
+  },
+  {
+    "id": "14",
+    "name": "Outside the Lines",
+    "world": "Beyond the Box",
+    "mechanic": "Layered switches",
+    "objective": "Use the room's platforms to activate switches in sequence.",
+    "difficulty": "Hard",
+    "designNote": "Previously learned mechanics combine without adding a new rule."
+  },
+  {
+    "id": "15",
+    "name": "A Box of Your Own",
+    "world": "Beyond the Box",
+    "mechanic": "Open solution",
+    "objective": "Choose your own route through a multi-step final puzzle.",
+    "difficulty": "Finale",
+    "designNote": "Several valid solutions close the concept set with player-led experimentation."
+  }
+]

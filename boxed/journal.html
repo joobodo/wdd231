@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Follow Boxed's development direction, from defining puzzle rules to planning a PC and mobile prototype. Request a local, on-device development update.">
+    <meta property="og:title" content="Dev Journal & Roadmap | Boxed">
+    <meta property="og:description" content="Follow the design and development direction for Boxed, an indie puzzle-platformer in progress.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/boxed/journal.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dev Journal & Roadmap | Boxed">
+    <meta name="twitter:description" content="Follow the design and development direction for Boxed.">
+    <meta name="twitter:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <title>Dev Journal & Roadmap | Boxed</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+    <script src="scripts/follow.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Boxed home"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="journal.html" aria-current="page">Dev journal</a>
+        <a class="nav-cta" href="#follow">Follow the build</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="page-intro">
+        <p class="eyebrow">Dev journal / roadmap</p>
+        <h1>Small steps. Clear progress.</h1>
+        <p class="lead">Boxed is in development. This page shares the work's current direction and intended next milestones without promising dates before the game is ready.</p>
+      </header>
+
+      <section class="section-block" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Development direction</p><h2 id="roadmap-title">From a rule to a world.</h2></div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="label">Current focus</p>
+            <h2>Define the puzzle language</h2>
+            <p>Settle the basic movement, block, and switch rules so each room teaches clearly and behaves consistently.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="label">Next milestone</p>
+            <h2>Build a playable slice</h2>
+            <p>Turn a small set of room concepts into a prototype, then test whether the puzzle ideas work in play.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="label">Looking ahead</p>
+            <h2>Explore PC and mobile</h2>
+            <p>Evaluate controls, screen layouts, and performance for both target platforms before sharing a release plan.</p>
+          </article>
+        </div>
+        <p class="muted">Milestones describe development intent. No release date or public build is announced.</p>
+      </section>
+
+      <section class="section-block" id="follow" aria-labelledby="follow-title">
+        <div class="form-panel">
+          <p class="eyebrow">Keep a note</p>
+          <h2 id="follow-title">Follow the build.</h2>
+          <p>Use the form to record your interest and preferred platform. This course demo stores the entry in this browser session only; it does not send email or transmit your information.</p>
+          <form class="follow-form" id="follow-form" action="follow.html" method="get">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="70" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+            <div class="field">
+              <label for="platform">Platform you are interested in</label>
+              <select id="platform" name="platform" required>
+                <option value="">Choose a platform</option>
+                <option value="PC">PC</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Both">Both</option>
+              </select>
+            </div>
+            <fieldset class="checkbox-group">
+              <legend class="field-label">What would you like to hear about?</legend>
+              <label class="checkbox-label"><input type="checkbox" name="topics" value="Gameplay and puzzles" checked> <span>Gameplay and puzzles</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="topics" value="Development milestones"> <span>Development milestones</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="topics" value="Platform plans"> <span>Platform plans</span></label>
+            </fieldset>
+            <button class="button" type="submit">Review my request</button>
+            <p class="fine-print" id="follow-feedback" role="status" aria-live="polite">Your details stay in this browser session and are removed after they are displayed.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Overview</a>
+          <a href="gameplay.html">Gameplay</a>
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtube.com/shorts/xgx_YhHZSyY?si=Gf-VzHeFY4wTo_Pz" target="_blank" rel="noopener noreferrer">Project video</a>
+        </nav>
+        <div class="footer-meta"><p>&copy; <span id="current-year"></span> Boxed · Joshua O. Obodo · WDD 231</p><p>Page updated: <span id="last-modified"></span></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

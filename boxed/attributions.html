@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua O. Obodo">
+    <meta name="description" content="Sources and attributions for the Boxed project website, including typography, original illustrations, and game concept content.">
+    <meta property="og:title" content="Attributions | Boxed">
+    <meta property="og:description" content="Sources and attributions for the Boxed project website.">
+    <meta property="og:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <meta property="og:url" content="https://joobodo.github.io/wdd231/boxed/attributions.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Attributions | Boxed">
+    <meta name="twitter:description" content="Sources and attributions for the Boxed project website.">
+    <meta name="twitter:image" content="https://joobodo.github.io/wdd231/boxed/images/boxed-world.svg">
+    <title>Attributions | Boxed</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Boxed home"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="journal.html">Dev journal</a>
+        <a class="nav-cta" href="journal.html#follow">Follow the build</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="page-intro">
+        <p class="eyebrow">Project information</p>
+        <h1>Attributions.</h1>
+        <p class="lead">The Boxed website uses original project copy, game-concept data, and illustrations created for this WDD 231 project.</p>
+      </header>
+      <section class="section-block" aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <ul>
+          <li>Game concept, copy, puzzle descriptions, favicon, and pixel-art illustration: original work by Joshua O. Obodo for Boxed.</li>
+          <li>Typography: <a href="https://fonts.google.com/specimen/Poppins">Poppins</a> and <a href="https://fonts.google.com/specimen/Inter">Inter</a>, served by Google Fonts.</li>
+          <li>Data: local <code>data/levels.json</code>, written for this project; no third-party game API is used.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true">B</span><span>BOXED</span></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Overview</a>
+          <a href="gameplay.html">Gameplay</a>
+          <a href="journal.html">Dev journal</a>
+          <a href="attributions.html" aria-current="page">Attributions</a>
+          <a href="https://youtube.com/shorts/xgx_YhHZSyY?si=Gf-VzHeFY4wTo_Pz" target="_blank" rel="noopener noreferrer">Project video</a>
+        </nav>
+        <div class="footer-meta"><p>&copy; <span id="current-year"></span> Boxed · Joshua O. Obodo · WDD 231</p><p>Page updated: <span id="last-modified"></span></p></div>
+      </div>
+    </footer>
+  </body>
+</html>
