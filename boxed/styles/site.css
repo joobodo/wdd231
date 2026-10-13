@@ -11,26 +11,11 @@
   --content-width: 1160px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body-font);
   line-height: 1.65;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 a {
@@ -43,18 +28,8 @@ a:hover {
 }
 
 button,
-input,
-select {
-  font: inherit;
-}
-
-button,
 .button {
   min-height: 44px;
-}
-
-button {
-  cursor: pointer;
 }
 
 :focus-visible {
